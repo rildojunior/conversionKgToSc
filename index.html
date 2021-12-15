@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversão Kg para Sc</title>
+    <!--Style-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <p class="title">Conversão KG em SC</p>
+
+    <section class="conversion">
+      <form id="conversion">
+        <div class="inputGroup">
+          <label for="bagKg">Peso(kg)<br />Por saca</label>
+          <input type="number" id="oneBag" name="bagKg" step="0.5" value="60.5" required />
+        </div>
+
+        <div class="inputGroup">
+          <label for="totalKg">Peso(kg)<br />Total</label>
+          <input type="number" id="weightBag" name="totalKg" required/>
+        </div>
+
+        <button type="submit">CALCULAR</button>
+      </form>
+    </section>
+
+    <section id="offering">
+      <div class="offeringContainer">
+        <p>Oferecimento:</p>
+      </div>
+      <div class="offering">
+        <img src="assets/logo.svg" alt="" />
+      </div>
+    </section>
+
+    <section class="result">
+      <div class="resultContainer">
+        <div class="totalContainer">
+          <div class="backgroundLeft">
+            <p>TOTAL</p>
+          </div>
+
+          <div class="backgroundRight">
+            <p id="totalMaster"></p>
+          </div>
+        </div>
+
+        <p class="percentage">20%</p>
+
+        <div class="resultsContainer">
+          <div class="backgroundLeft">
+            <p>Patrão</p>
+            <p>Meeiro</p>
+          </div>
+
+          <div class="backgroundRight">
+            <p id="twentyPercBoss"></p>
+            <p id="twentyPercEmployee"></p>
+          </div>
+        </div>
+
+        <p class="percentage">10%</p>
+
+        <div class="resultsContainer">
+          <div class="backgroundLeft">
+            <p>Patrão</p>
+            <p>Meeiro</p>
+          </div>
+
+          <div class="backgroundRight">
+            <p id="tenPercBoss"></p>
+            <p id="tenPercEmployee"></p>
+          </div>
+        </div>
+
+        <p class="percentage">Meia</p>
+
+        <div class="resultsContainer">
+          <div class="backgroundLeft">
+            <p>Patrão</p>
+            <p>Meeiro</p>
+          </div>
+
+          <div class="backgroundRight">
+            <p id="fiftyPercentBoss"></p>
+            <p id="fiftyPercentEmployee"></p>
+          </div>
+        </div>
+
+        <button type="button" id="back"">VOLTAR</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="offeringContainer">
+        <p>Todos os direitos reservados ao criador</p>
+        <p class="rildo">Rildo Júnior</p>
+        <div class="social">
+          <a href="https://instagram.com/rildo_junior">
+            <img src="assets/instagram.svg" alt="icone instagram" />
+          </a>
+          <a href="https://github.com/rildojunior">
+            <img src="assets/github.svg" alt="icone github" />
+          </a>
+          <a href="https://linktr.ee/rildo_junior">
+            <img src="assets/link.svg" alt="icone links" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
