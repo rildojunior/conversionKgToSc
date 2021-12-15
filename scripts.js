@@ -24,8 +24,7 @@ function calcConversion(event) {
   totalMasterSc = totalMasterSc.toFixedDown(0)
 
   let totalMasterKg = totalMasterSc * oneBag - weightBag
-  totalMasterKg = totalMasterKg.toFixed(1)
-  totalMasterKg = totalMasterKg.replace('-', '')
+  totalMasterKg = parseInt(totalMasterKg * -1)
 
   document.getElementById(
     'totalMaster'
@@ -39,8 +38,7 @@ function calcConversion(event) {
   bossSixtyPercSc = bossSixtyPercSc.toFixedDown(0)
 
   let bossSixtyPercKg = bossSixtyPercSc * oneBag - sixtyPercent
-  bossSixtyPercKg = bossSixtyPercKg.toFixed(1)
-  bossSixtyPercKg = bossSixtyPercKg.replace('-', '')
+  bossSixtyPercKg = parseInt(bossSixtyPercKg * -1)
 
   document.getElementById(
     'twentyPercBoss'
@@ -53,8 +51,7 @@ function calcConversion(event) {
   employeeFortyPercSc = employeeFortyPercSc.toFixedDown(0)
 
   let employeeFortyPercKg = employeeFortyPercSc * oneBag - fortyPercent
-  employeeFortyPercKg = employeeFortyPercKg.toFixed(1)
-  employeeFortyPercKg = employeeFortyPercKg.replace('-', '')
+  employeeFortyPercKg = parseInt(employeeFortyPercKg * -1)
 
   document.getElementById(
     'twentyPercEmployee'
@@ -68,8 +65,7 @@ function calcConversion(event) {
   bossFiftyFivePercSc = bossFiftyFivePercSc.toFixedDown(0)
 
   let bossFiftyFivePercKg = bossFiftyFivePercSc * oneBag - fiftyFivePercent
-  bossFiftyFivePercKg = bossFiftyFivePercKg.toFixed(1)
-  bossFiftyFivePercKg = bossFiftyFivePercKg.replace('-', '')
+  bossFiftyFivePercKg = parseInt(bossFiftyFivePercKg * -1)
 
   document.getElementById(
     'tenPercBoss'
@@ -83,8 +79,7 @@ function calcConversion(event) {
 
   let employeeFortyFivePercKg =
     employeeFortyFivePercSc * oneBag - fortyFivePercent
-  employeeFortyFivePercKg = employeeFortyFivePercKg.toFixed(1)
-  employeeFortyFivePercKg = employeeFortyFivePercKg.replace('-', '')
+  employeeFortyFivePercKg = parseInt(employeeFortyFivePercKg * -1)
 
   document.getElementById(
     'tenPercEmployee'
@@ -97,8 +92,7 @@ function calcConversion(event) {
   FiftyFivePercSc = FiftyFivePercSc.toFixedDown(0)
 
   let FiftyFivePercKg = FiftyFivePercSc * oneBag - fiftyPercent
-  FiftyFivePercKg = FiftyFivePercKg.toFixed(1)
-  FiftyFivePercKg = FiftyFivePercKg.replace('-', '')
+  FiftyFivePercKg = parseInt(FiftyFivePercKg * -1)
 
   document.getElementById(
     'fiftyPercentBoss'
