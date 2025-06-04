@@ -2,11 +2,6 @@ function open() {
   document.querySelector('.result').classList.add('active');
 }
 
-function close() {
-  document.querySelector('.result').classList.remove('active');
-  return close;
-}
-
 function calculate(idName, percentage) {
   let oneBag = document.getElementById('oneBag').value;
   let weightBag = document.getElementById('weightBag').value;
@@ -50,4 +45,3 @@ function calcConversion(event) {
 }
 
 document.querySelector('form').addEventListener('submit', calcConversion);
-document.getElementById('back').addEventListener('click', close());
