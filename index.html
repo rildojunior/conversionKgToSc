@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt_BR">
   <head>
     <meta charset="UTF-8" />
@@ -14,38 +14,47 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="https://rildojunior.github.io/conversionKgToSc/assets/favicon.ico"/>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://rildojunior.github.io/conversionKgToSc/assets/favicon.ico"
+    />
   </head>
   <body>
-    <h1 class="title">Conversão KG em SC</h1>
+    <main>
+      <h1 class="title">Conversão KG em SC</h1>
 
-    <section class="conversion">
+      <section class="conversion">
       <form id="conversion">
         <div class="inputGroup">
-          <label for="bagKg">Peso(kg)<br />Por saca</label>
-          <input type="number" id="oneBag" name="bagKg" step="0.1" value="61" required />
+          <label for="bagKg"><span>Peso(kg)</span><span>Por saca</span></label>
+          <input
+            type="number"
+            id="oneBag"
+            name="bagKg"
+            step="0.1"
+            value="61"
+            required
+          />
         </div>
 
         <div class="inputGroup">
-          <label for="totalKg">Peso(kg)<br />Total</label>
-          <input type="number" id="weightBag" name="totalKg" required/>
+          <label for="totalKg"><span>Peso(kg)</span><span>Total</span></label>
+          <input type="number" id="weightBag" name="totalKg" required />
         </div>
 
         <button type="submit">CALCULAR</button>
       </form>
-    </section>
-
-    <section id="offering">
-      <div class="offeringContainer">
-        <p>Oferecimento:</p>
-      </div>
-      <div class="offering">
-        <img src="assets/logo.svg" alt="Logo do parceiro" width="180" loading="lazy" />
-      </div>
-    </section>
+      </section>
+    </main>
 
     <section class="result">
-      <div class="resultContainer" role="dialog" aria-modal="true" aria-label="Resultados do cálculo">
+      <div
+        class="resultContainer"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Resultados do cálculo"
+      >
         <div class="totalContainer">
           <div class="backgroundLeft">
             <p>TOTAL</p>
@@ -107,14 +116,44 @@
         <p>Todos os direitos reservados ao criador</p>
         <p class="rildo">Rildo Júnior</p>
         <div class="social">
-          <a href="https://instagram.com/rildo_junior" target="_blank" rel="noopener noreferrer">
-            <img src="assets/instagram.svg" alt="ícone Instagram" width="24" height="24" loading="lazy" />
+          <a
+            href="https://instagram.com/rildo_junior"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="assets/instagram.svg"
+              alt="ícone Instagram"
+              width="24"
+              height="24"
+              loading="lazy"
+            />
           </a>
-          <a href="https://github.com/rildojunior" target="_blank" rel="noopener noreferrer">
-            <img src="assets/github.svg" alt="ícone github" width="24" height="24" loading="lazy" />
+          <a
+            href="https://github.com/rildojunior"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="assets/github.svg"
+              alt="ícone github"
+              width="24"
+              height="24"
+              loading="lazy"
+            />
           </a>
-          <a href="https://linktr.ee/rildo_junior" target="_blank" rel="noopener noreferrer">
-            <img src="assets/link.svg" alt="ícone links" width="24" height="24" loading="lazy" />
+          <a
+            href="https://linktr.ee/rildo_junior"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="assets/link.svg"
+              alt="ícone links"
+              width="24"
+              height="24"
+              loading="lazy"
+            />
           </a>
         </div>
       </div>
