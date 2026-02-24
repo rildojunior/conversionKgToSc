@@ -1,10 +1,9 @@
-function open() {
+function showResult() {
   document.querySelector('.result').classList.add('active');
 }
 
-function close() {
+function hideResult() {
   document.querySelector('.result').classList.remove('active');
-  return close;
 }
 
 function calculate(idName, percentage) {
@@ -46,8 +45,8 @@ function calcConversion(event) {
   calculate('tenPercEmployee', 0.45);
   calculate('fiftyPercentBoss', 0.5);
   calculate('fiftyPercentEmployee', 0.5);
-  open();
+  showResult();
 }
 
 document.querySelector('form').addEventListener('submit', calcConversion);
-document.getElementById('back').addEventListener('click', close());
+document.getElementById('back').addEventListener('click', hideResult);
