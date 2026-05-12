@@ -1,16 +1,16 @@
 const CACHE_NAME = 'kg-para-sc-v1';
 const ASSETS = [
-  '/conversionKgToSc/',
-  '/conversionKgToSc/index.html',
-  '/conversionKgToSc/style.css',
-  '/conversionKgToSc/scripts.js',
-  '/conversionKgToSc/manifest.json',
-  '/conversionKgToSc/assets/favicon.ico',
-  '/conversionKgToSc/assets/icon-192x192.png',
-  '/conversionKgToSc/assets/icon-512x512.png',
-  '/conversionKgToSc/assets/apple-touch-icon.png',
-  '/conversionKgToSc/assets/github.svg',
-  '/conversionKgToSc/assets/instagram.svg',
+  '/',
+  '/index.html',
+  '/style.css',
+  '/scripts.js',
+  '/manifest.json',
+  '/assets/favicon.ico',
+  '/assets/icon-192x192.png',
+  '/assets/icon-512x512.png',
+  '/assets/apple-touch-icon.png',
+  '/assets/github.svg',
+  '/assets/instagram.svg',
 ];
 
 self.addEventListener('install', (event) => {
