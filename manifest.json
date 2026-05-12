@@ -1,0 +1,26 @@
+{
+  "name": "Conversão Kg para Sc",
+  "short_name": "Kg para Sc",
+  "description": "Calculadora de conversão de quilogramas para sacas com divisão por porcentagem.",
+  "start_url": "/conversionKgToSc/",
+  "scope": "/conversionKgToSc/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1e1515",
+  "theme_color": "#c4623c",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "assets/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
