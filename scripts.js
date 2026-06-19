@@ -48,5 +48,15 @@ function calcConversion(event) {
   showResult();
 }
 
+const oneBagInput = document.getElementById('oneBag');
+const savedOneBag = localStorage.getItem('oneBag');
+if (savedOneBag !== null) {
+  oneBagInput.value = savedOneBag;
+}
+
+oneBagInput.addEventListener('change', () => {
+  localStorage.setItem('oneBag', oneBagInput.value);
+});
+
 document.querySelector('form').addEventListener('submit', calcConversion);
 document.getElementById('back').addEventListener('click', hideResult);
