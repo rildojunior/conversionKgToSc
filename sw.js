@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kg-para-sc-v6'
+const CACHE_NAME = 'kg-para-sc-v7'
 const ASSETS = [
   '/',
   '/index.html',
