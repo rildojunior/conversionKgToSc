@@ -58,5 +58,39 @@ oneBagInput.addEventListener('change', () => {
   localStorage.setItem('oneBag', oneBagInput.value);
 });
 
+function flashCopied(btn) {
+  btn.classList.add('copied');
+  setTimeout(() => btn.classList.remove('copied'), 1500);
+}
+
+function copyText(text, btn) {
+  navigator.clipboard.writeText(text).then(() => flashCopied(btn));
+}
+
+document.getElementById('copyTotal').addEventListener('click', function () {
+  const total = document.getElementById('totalMaster').textContent;
+  copyText(`Peso total: ${total}`, this);
+});
+
+document.getElementById('copyTwenty').addEventListener('click', function () {
+  const total = document.getElementById('totalMaster').textContent;
+  const boss = document.getElementById('twentyPercBoss').textContent;
+  const employee = document.getElementById('twentyPercEmployee').textContent;
+  copyText(`Peso total: ${total}\n\nCálculo 20%\n\nPatrão: ${boss}\n\nMeeiro: ${employee}`, this);
+});
+
+document.getElementById('copyTen').addEventListener('click', function () {
+  const total = document.getElementById('totalMaster').textContent;
+  const boss = document.getElementById('tenPercBoss').textContent;
+  const employee = document.getElementById('tenPercEmployee').textContent;
+  copyText(`Peso total: ${total}\n\nCálculo 10%\n\nPatrão: ${boss}\n\nMeeiro: ${employee}`, this);
+});
+
+document.getElementById('copyMeia').addEventListener('click', function () {
+  const total = document.getElementById('totalMaster').textContent;
+  const each = document.getElementById('fiftyPercentBoss').textContent;
+  copyText(`Peso total: ${total}\n\nCálculo a Meia: ${each} para cada`, this);
+});
+
 document.querySelector('form').addEventListener('submit', calcConversion);
 document.getElementById('back').addEventListener('click', hideResult);
