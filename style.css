@@ -2,12 +2,12 @@
    Variáveis
    =========================== */
 :root {
-  --color-bg:            #1e1515;
-  --color-primary:       #c4623c;
-  --color-primary-hover: #d4724c;
-  --color-primary-light: #e8c9a0;
-  --color-text:          #f5ede4;
-  --color-border:        #4a3030;
+  --color-bg:            #261913;
+  --color-primary:       #C1683F;
+  --color-primary-hover: #D07349;
+  --color-primary-light: #EAD6AE;
+  --color-text:          #F5EDE4;
+  --color-border:        #3D2415;
 
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
   --shadow-md: 0 6px 28px rgba(0, 0, 0, 0.55);
@@ -51,7 +51,24 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem 0 1.5rem;
+  padding: 0;
+}
+
+/* ===========================
+   Cabeçalho com logo — mobile base
+   =========================== */
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.app-logo {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 0.625rem;
 }
 
 /* ===========================
@@ -60,8 +77,7 @@ main {
 .title {
   font: 700 1.5rem var(--title-font);
   color: var(--color-text);
-  text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   letter-spacing: 0.01em;
 }
 
@@ -363,9 +379,17 @@ footer a img {
    Tablet — min-width: 480px
    =========================== */
 @media (min-width: 480px) {
+  .app-header {
+    margin-bottom: 1.75rem;
+  }
+
+  .app-logo {
+    width: 80px;
+    height: 80px;
+  }
+
   .title {
     font-size: 1.75rem;
-    margin-bottom: 1.75rem;
   }
 
   label {
@@ -408,12 +432,20 @@ footer a img {
    =========================== */
 @media (min-width: 768px) {
   main {
-    padding: 3rem 0 2rem;
+    padding: 0;
+  }
+
+  .app-header {
+    margin-bottom: 2rem;
+  }
+
+  .app-logo {
+    width: 88px;
+    height: 88px;
   }
 
   .title {
     font-size: 1.875rem;
-    margin-bottom: 2rem;
   }
 
   label {

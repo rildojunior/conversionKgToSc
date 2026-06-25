@@ -14,11 +14,22 @@ Vanilla HTML + CSS + JavaScript. Sem framework, sem build step, sem dependência
 
 ```
 index.html      — estrutura da UI
-style.css       — estilos (tema escuro, cores laranja/terracota)
+style.css       — estilos (tema escuro, paleta Espresso/Areia/Terracota/Trigo)
 scripts.js      — toda a lógica de cálculo e manipulação de DOM
 sw.js           — Service Worker para cache offline (PWA)
 manifest.json   — manifesto da PWA
-assets/         — ícones (192x192, 512x512, apple-touch-icon, favicon, SVGs sociais)
+assets/         — ícones PWA e SVGs sociais:
+  favicon.svg           — favicon vetorial + logo na tela inicial
+  favicon-16.png        — favicon 16×16 (fallback)
+  favicon-32.png        — favicon 32×32 (fallback)
+  apple-touch-icon.png  — ícone iOS/iPadOS (180×180)
+  icon-192.png          — ícone Android/Windows (purpose: any)
+  icon-512.png          — ícone Android/Windows (purpose: any)
+  icon-maskable-192.png — ícone adaptável Android (purpose: maskable)
+  icon-maskable-512.png — ícone adaptável Android (purpose: maskable)
+  icon-1024.png         — master para lojas (App Store / Play Store)
+  github.svg            — ícone social
+  instagram.svg         — ícone social
 CNAME           — domínio customizado para GitHub Pages
 ```
 
@@ -49,8 +60,8 @@ O total geral usa `calculateTotalMaster`, que divide o peso total pelo peso por 
 
 ## PWA / Service Worker
 
-- Cache name atual: **`kg-para-sc-v3`** (em `sw.js`)
-- Para forçar atualização do PWA nos dispositivos dos usuários: incrementar o número no `CACHE_NAME` (ex: `v3` → `v4`).
+- Cache name atual: **`kg-para-sc-v6`** (em `sw.js`)
+- Para forçar atualização do PWA nos dispositivos dos usuários: incrementar o número no `CACHE_NAME` (ex: `v6` → `v7`).
 - Estratégia: cache-first, com fallback para rede.
 - Registrado inline no `index.html` via `navigator.serviceWorker.register('/sw.js')`.
 
@@ -64,12 +75,29 @@ O valor do campo "Peso por saca" é salvo em `localStorage` com a chave `oneBag`
 2. A seção `.result` recebe a classe `active` (exibe overlay com os resultados).
 3. Botão "VOLTAR" remove a classe `active` e retorna ao formulário.
 
+## Paleta de Cores
+
+Cores oficiais do projeto (usar sempre estas, sem introduzir novas):
+
+| Nome      | Hex       | Uso principal                        |
+|-----------|-----------|--------------------------------------|
+| Espresso  | `#261913` | Fundo do app e dos ícones PWA        |
+| Areia     | `#EAD6AE` | Labels, fundo do footer, ícone (any) |
+| Terracota | `#C1683F` | Botões, destaques, acento do ícone   |
+| Trigo     | `#E7C893` | Hover / variação de destaque         |
+
+As variáveis CSS em `style.css` mapeiam diretamente esta paleta:
+- `--color-bg: #261913`
+- `--color-primary: #C1683F`
+- `--color-primary-light: #EAD6AE`
+
 ## Convenções
 
 - Idioma: português brasileiro (PT-BR) em toda a UI.
 - Não há transpiler ou bundler. Editar os arquivos diretamente.
 - Não usar `console.log` em produção.
 - Manter o `parseInt` nos cálculos — trunca intencionalmente (não arredonda).
+- O logo (`assets/favicon.svg`) é exibido na tela inicial acima do título, via `.app-header > .app-logo`.
 
 ## Regras de Commit
 
@@ -90,4 +118,4 @@ Exemplos:
 ## Regras de Deploy
 
 - **Nunca fazer `git push` sem perguntar ao usuário antes.**
-- **Antes de qualquer push**, incrementar o `CACHE_NAME` em `sw.js` (ex: `kg-para-sc-v3` → `kg-para-sc-v4`) para forçar a atualização do PWA nos dispositivos onde o app está instalado.
+- **Antes de qualquer push**, incrementar o `CACHE_NAME` em `sw.js` (ex: `kg-para-sc-v6` → `kg-para-sc-v7`) para forçar a atualização do PWA nos dispositivos onde o app está instalado.

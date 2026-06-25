@@ -1,14 +1,18 @@
-const CACHE_NAME = 'kg-para-sc-v5'
+const CACHE_NAME = 'kg-para-sc-v6'
 const ASSETS = [
   '/',
   '/index.html',
   '/style.css',
   '/scripts.js',
   '/manifest.json',
-  '/assets/favicon.ico',
-  '/assets/icon-192x192.png',
-  '/assets/icon-512x512.png',
+  '/assets/favicon.svg',
+  '/assets/favicon-16.png',
+  '/assets/favicon-32.png',
   '/assets/apple-touch-icon.png',
+  '/assets/icon-192.png',
+  '/assets/icon-512.png',
+  '/assets/icon-maskable-192.png',
+  '/assets/icon-maskable-512.png',
   '/assets/github.svg',
   '/assets/instagram.svg'
 ]

@@ -14,10 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Favicon (aba do navegador) -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png" />
+    <!-- iOS / iPadOS -->
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <!-- PWA -->
     <link rel="manifest" href="manifest.json" />
-    <meta name="theme-color" content="#c4623c" />
+    <meta name="theme-color" content="#261913" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -25,7 +30,16 @@
   </head>
   <body>
     <main>
-      <h1 class="title">Conversão KG em SC</h1>
+      <div class="app-header">
+        <img
+          src="assets/favicon.svg"
+          alt="Conversão KG em SC"
+          class="app-logo"
+          width="48"
+          height="48"
+        />
+        <h1 class="title">Conversão KG em SC</h1>
+      </div>
 
       <section class="conversion">
         <form id="conversion">
