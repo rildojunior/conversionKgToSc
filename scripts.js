@@ -76,14 +76,14 @@ document.getElementById('copyTwenty').addEventListener('click', function () {
   const total = document.getElementById('totalMaster').textContent;
   const boss = document.getElementById('twentyPercBoss').textContent;
   const employee = document.getElementById('twentyPercEmployee').textContent;
-  copyText(`Peso total: ${total}\n\nCálculo 20%\n\nPatrão: ${boss}\n\nMeeiro: ${employee}`, this);
+  copyText(`Peso total: ${total}\n\nCálculo 20%\nPatrão: ${boss}\nMeeiro: ${employee}`, this);
 });
 
 document.getElementById('copyTen').addEventListener('click', function () {
   const total = document.getElementById('totalMaster').textContent;
   const boss = document.getElementById('tenPercBoss').textContent;
   const employee = document.getElementById('tenPercEmployee').textContent;
-  copyText(`Peso total: ${total}\n\nCálculo 10%\n\nPatrão: ${boss}\n\nMeeiro: ${employee}`, this);
+  copyText(`Peso total: ${total}\n\nCálculo 10%\nPatrão: ${boss}\nMeeiro: ${employee}`, this);
 });
 
 document.getElementById('copyMeia').addEventListener('click', function () {
